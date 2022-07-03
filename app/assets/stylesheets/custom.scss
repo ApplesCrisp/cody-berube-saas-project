@@ -15,7 +15,31 @@ body {
   font-size: xx-small;
 }
 
-#welcome-wrapper {
+#sign-in-div {
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#sign-in-button {
+  width: 50%;
+}
+.input-fields {
+  width: 50%;
+}
+
+.input-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.welcome-wrappers {
   background-color: white;
   border-radius: 10px;
   width: 30%;
