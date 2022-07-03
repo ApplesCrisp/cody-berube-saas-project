@@ -1,0 +1,32 @@
+
+body {
+  font-family: "Georgia";
+  background-image: url(asset_path('application_background.jpg'));
+  background-attachment: fixed;
+  background-size: cover;
+  display: block;
+    
+}
+
+#credit {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: xx-small;
+}
+
+#welcome-wrapper {
+  background-color: white;
+  border-radius: 10px;
+  width: 30%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding-top: 40px;
+}
+
+h1 {
+  text-align: center;
+}

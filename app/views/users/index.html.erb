@@ -1,14 +1,20 @@
-<p style="color: green"><%= notice %></p>
+<div id="welcome-wrapper">
+  <h1>Welcome</h1>
+  <%= form_with(model: @user) do |frm| %>
+    <div>
+      <%= frm.label :username, style: "display: block" %>
+      <%= frm.text_field :username %>
+    </div>
 
-<h1>Users</h1>
+    <div>
+      <%= frm.label :password, style: "display: block" %>
+      <%= frm.text_field :password %>
+    </div>
 
-<div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
+    <div>
+      <%= frm.submit %>
+    </div>
   <% end %>
-</div>
 
-<%= link_to "New user", new_user_path %>
+</div>
+<a id="credit" href='https://www.freepik.com/vectors/plain-backgrounds'>Plain backgrounds vector created by rawpixel.com - www.freepik.com</a>

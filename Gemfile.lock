@@ -70,6 +70,9 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.4.7.0)
       execjs (~> 2)
+    bcrypt (3.1.18)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
     bindex (0.8.1)
     bootsnap (1.12.0)
       msgpack (~> 1.2)
@@ -97,6 +100,7 @@ GEM
       irb (>= 1.3.6)
       reline (>= 0.2.7)
     digest (3.1.0)
+    erb-formatter (0.3.0)
     erubi (1.10.0)
     execjs (2.8.1)
     ffi (1.15.5-x64-mingw-ucrt)
@@ -250,11 +254,14 @@ PLATFORMS
   x64-mingw-ucrt
 
 DEPENDENCIES
+  bcrypt
+  bcrypt-ruby
   bootsnap
   bootstrap (~> 5.1.3)
   bootstrap-sass
   capybara
   debug
+  erb-formatter
   ffi
   importmap-rails
   jbuilder

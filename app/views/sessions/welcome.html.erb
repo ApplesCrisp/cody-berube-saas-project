@@ -1,0 +1,11 @@
+<div id="welcome-wrapper">
+  <h1>Welcome
+    <% if logged_in? %>
+      back
+      <%= current_user.username %><% end %>
+  </h1>
+
+  <%= button_to "Login", '/login', method: :get %>
+  <%= button_to "Sign Up", '/users/new', method: :get %>
+</div>
+<a id="credit" href='https://www.freepik.com/vectors/plain-backgrounds'>Plain backgrounds vector created by rawpixel.com - www.freepik.com</a>
